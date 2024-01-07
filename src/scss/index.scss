@@ -1,0 +1,20 @@
+@import "mixins";
+@import "fonts";
+
+.red {
+  color: black;
+  &__item {
+    color: red;
+  }
+}
+
+body {
+  background-color: crimson;
+  font-family: "OpenSans-Regular";
+}
+
+h1 {
+  font-weight: 400;
+}
+
+
