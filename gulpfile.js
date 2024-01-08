@@ -217,7 +217,7 @@ const htmlInclude = () => {
     .pipe(browserSync.stream());
 };
 const htmlMinify = () => {
-  return src([`${srcFolder}/**/*.html`])
+  return src([`${distFolder}/**/*.html`])
     .pipe(
       htmlMin({
         collapseWhitespace: true,
