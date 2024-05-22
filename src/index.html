@@ -2,16 +2,38 @@
 <html lang="ru">
   @include('partials/head.html')
   <body>
-    <img src="./img/logo.png" alt="" />
-
-    <svg>
-      <use xlink:href="img/sprite.svg#vk" />
-    </svg>
-
-    <h1>Далеко-далеко за словесными горами в стране.</h1>
-
-    <svg class="">
-      <use xlink:href="img/sprite.svg#" />
-    </svg>
+    <section class="hero"></section>
+    <section class="timeline">
+      <div class="container">
+        <h2 class="timeline__title">План дня</h2>
+        <ul class="timeline__list">
+          <li class="timeline__item">
+            <img src="" alt="" class="timeline__svg" />
+            <p class="timeline__time">15:00</p>
+            <span class="timeline__dot"></span>
+            <p class="timeline__name">Сбор гостей</p>
+          </li>
+          <li class="timeline__item">
+            <img src="" alt="" class="timeline__svg" />
+            <p class="timeline__time">16:00</p>
+            <span class="timeline__dot"></span>
+            <p class="timeline__name">Фуршет</p>
+          </li>
+          <li class="timeline__item">
+            <img src="" alt="" class="timeline__svg" />
+            <p class="timeline__time">17:00</p>
+            <span class="timeline__dot"></span>
+            <p class="timeline__name">Церемония</p>
+          </li>
+          <li class="timeline__item">
+            <img src="" alt="" class="timeline__svg" />
+            <p class="timeline__time">18:00</p>
+            <span class="timeline__dot"></span>
+            <p class="timeline__name">Праздничный банкет</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="invite"></section>
   </body>
 </html>

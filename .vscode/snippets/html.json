@@ -103,8 +103,8 @@
     "prefix": "g-picture",
     "body": [
       "<picture>",
-      "  <source srcset=\"$1.webp\" type=\"image/webp\">",
-      "  <img loading=\"lazy\" src=\"$1.$2\" class=\"image\" width=\"$4\" height=\"$5\" alt=\"$3\">",
+      "  <source data-srcset=\"$1.webp\" srcset=\"#\" type=\"image/webp\">",
+      "  <img loading=\"lazy\" data-src=\"$1.$2\" src=\"#\" class=\"image\" width=\"$4\" height=\"$5\" alt=\"$3\">",
       "</picture>"
     ],
     "description": "Snippet for basic logo structure"
