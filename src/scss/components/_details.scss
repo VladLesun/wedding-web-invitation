@@ -1,0 +1,34 @@
+.details {
+  padding: 140px 0;
+
+  &__item {
+    &:first-child {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 60px;
+    font-family: var(--Resphekt);
+    margin-bottom: 10px;
+  }
+
+  &__sublist {
+    list-style-type: disc;
+    padding-left: 25px;
+  }
+
+  &__subitem {
+    font-size: 30px;
+    &-text {
+      font-weight: 400;
+      font-size: 24px;
+    }
+  }
+
+  &__desc {
+    font-weight: 400;
+    font-size: 24px;
+  }
+}

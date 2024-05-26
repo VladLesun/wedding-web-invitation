@@ -1,0 +1,22 @@
+.counter {
+  position: relative;
+  padding-top: 30%;
+  background: center/cover no-repeat;
+  background-image: image-set(
+    url("../img/4.webp") type("image/webp"),
+    url("../img/4.jpeg") type("image/jpeg")
+  );
+
+  &__wrap {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 20px;
+  }
+
+  &__waiting {
+    font-weight: 700;
+    font-size: 60px;
+    font-family: var(--Nickainley-Normal);
+  }
+}

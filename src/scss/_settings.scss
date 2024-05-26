@@ -83,7 +83,7 @@ input {
 }
 .lazyloaded {
   opacity: 1;
-  transition: opacity 300ms;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .visually-hidden {

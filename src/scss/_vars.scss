@@ -1,11 +1,17 @@
 :root {
   //! Шрифты
   --Calibri: "Calibri-Regular", san-serif;
-  --HKGrotesk-Bold: "HKGrotesk-Bold", san-serif;
-  --HKGrotesk-Medium: "HKGrotesk-Medium", san-serif;
-  --TheSeasons-Bold: "TheSeasons-Bold", san-serif;
+  --Nickainley-Normal: "Nickainley-Normal", san-serif;
+  --Resphekt: "Resphekt", san-serif;
 
   //! Цвета
   --main-color: #000;
   --main-bg: #fff;
+  --main-border: #000;
+  //! hovers
+  --hover-map-color: rgb(229, 225, 230);
+  --active-map-color: rgb(229, 225, 230);
+  --active-map-bg: #000;
+  --hover-link-color: rgb(212, 175, 55);
+  --active-link-color: rgb(212, 175, 55);
 }

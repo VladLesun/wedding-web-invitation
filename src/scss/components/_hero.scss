@@ -1,0 +1,8 @@
+.hero {
+  padding-top: 56.25%;
+  background: center/cover no-repeat;
+  background-image: image-set(
+    url("../img/7.webp") type("image/webp"),
+    url("../img/7.jpg") type("image/jpg")
+  );
+}
