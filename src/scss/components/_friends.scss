@@ -1,0 +1,17 @@
+.friends {
+  padding: 140px 0;
+  text-align: center;
+  &__title {
+    font-weight: 700;
+    font-size: 60px;
+    font-family: var(--Resphekt);
+    margin-bottom: 10px;
+  }
+
+  &__desc {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1;
+    font-family: var(--Resphekt);
+  }
+}

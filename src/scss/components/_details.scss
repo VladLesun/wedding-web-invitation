@@ -1,12 +1,5 @@
 .details {
-  padding: 140px 0;
-
-  &__item {
-    &:first-child {
-      margin-bottom: 40px;
-    }
-  }
-
+  padding: 35px 0 140px;
   &__title {
     font-weight: 700;
     font-size: 60px;
@@ -14,21 +7,45 @@
     margin-bottom: 10px;
   }
 
-  &__sublist {
-    list-style-type: disc;
-    padding-left: 25px;
-  }
-
-  &__subitem {
-    font-size: 30px;
-    &-text {
-      font-weight: 400;
-      font-size: 24px;
-    }
-  }
-
   &__desc {
     font-weight: 400;
     font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  &__item {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    &_one {
+      background-color: rgb(232, 219, 200);
+    }
+
+    &_two {
+      background-color: rgb(200, 161, 147);
+    }
+
+    &_three {
+      background-color: rgb(187, 187, 187);
+    }
+
+    &_four {
+      background-color: rgb(161, 129, 106);
+    }
+
+    &_five {
+      background-color: rgb(53, 69, 43);
+    }
+
+    &_six {
+      background-color: rgb(0, 0, 0);
+    }
   }
 }

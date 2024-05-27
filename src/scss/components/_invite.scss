@@ -14,8 +14,14 @@
     }
   }
 
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
   &__title {
-    font-weight: 400;
+    font-weight: 700;
     font-size: 60px;
     font-family: var(--Resphekt);
     margin-bottom: 10px;
@@ -29,9 +35,15 @@
     font-family: var(--Resphekt);
   }
 
-  &__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  &__subitem {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+    &_text {
+      font-weight: 400;
+      font-size: 34px;
+      line-height: 1;
+      font-family: var(--Resphekt);
+    }
   }
 }
