@@ -16,6 +16,7 @@
   &__desc-strong {
     position: relative;
     font-family: var(--Resphekt);
+    font-weight: 700;
     font-size: 40px;
     &::after {
       position: absolute;
@@ -25,7 +26,7 @@
       content: "";
       width: 100%;
       height: 1px;
-      background-color: black;
+      background-color: var(--main-color);
     }
   }
 
@@ -38,6 +39,7 @@
   &__link {
     position: relative;
     font-family: var(--Resphekt);
+    font-weight: 700;
     font-size: 40px;
     transition: color 0.3s ease-in-out;
     &::after {
@@ -48,7 +50,7 @@
       content: "";
       width: 100%;
       height: 1px;
-      background-color: black;
+      background-color: var(--main-color);
       transition: background-color 0.3s ease-in-out;
     }
     @include hover {
@@ -63,5 +65,96 @@
         background-color: var(--active-link-color);
       }
     }
+  }
+}
+
+@include laptop-L {
+  .questionnaire {
+    padding: 70px 0;
+    &__title {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    &__desc {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    &__desc-strong {
+      font-size: 30px;
+    }
+
+    &__ask {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 22px;
+    }
+
+    &__link {
+      width: max-content;
+      font-size: 30px;
+    }
+  }
+}
+
+@include laptop {
+  .questionnaire {
+    padding: 60px 0;
+    &__title {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    &__desc {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    &__desc-strong {
+      font-size: 24px;
+    }
+
+    &__ask {
+      font-size: 18px;
+    }
+
+    &__link {
+      font-size: 24px;
+    }
+  }
+}
+
+@include tablet {
+  .questionnaire {
+    padding: 40px 0;
+    &__title {
+      font-size: 28px;
+      margin-bottom: 5px;
+    }
+
+    &__desc {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+    &__desc-strong {
+      font-size: 24px;
+    }
+
+    &__ask {
+      font-size: 20px;
+    }
+
+    &__link {
+      font-size: 24px;
+    }
+  }
+}
+
+@include tablet {
+  .questionnaire {
+    padding: 20px 0;
   }
 }

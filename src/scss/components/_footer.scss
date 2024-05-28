@@ -1,7 +1,5 @@
 .footer {
   padding: 140px 0 20px;
-  &__container {
-  }
 
   &__top {
     display: flex;
@@ -64,7 +62,7 @@
   &__bottom {
     text-align: center;
     padding-top: 20px;
-    border-top: 1px solid black;
+    border-top: 1px solid var(--main-border);
   }
 
   &__bottom-desc {
@@ -82,5 +80,152 @@
     &:active {
       color: var(--active-link-color);
     }
+  }
+}
+
+@include laptop-L {
+  .footer {
+    padding: 70px 0 10px;
+
+    &__top {
+      margin-bottom: 20px;
+    }
+
+    &__descriptions {
+      margin-bottom: 10px;
+    }
+
+    &__desc {
+      font-size: 40px;
+      &_love {
+        margin-left: -60px;
+      }
+    }
+
+    &__title {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+
+    &__organizer {
+      font-size: 22px;
+      &_link {
+        font-size: 20px;
+      }
+    }
+
+    &__bottom {
+      padding-top: 10px;
+    }
+  }
+}
+
+@include laptop {
+  .footer {
+    padding: 60px 0 10px;
+
+    &__top {
+      margin-bottom: 10px;
+    }
+
+    &__descriptions {
+      margin-bottom: 8px;
+    }
+
+    &__desc {
+      font-size: 32px;
+      &_love {
+        margin-left: -60px;
+      }
+    }
+
+    &__title {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: 8px;
+      }
+    }
+
+    &__organizer {
+      font-size: 18px;
+      &_link {
+        font-size: 18px;
+      }
+    }
+
+    &__bottom {
+      padding-top: 10px;
+      &-desc {
+        font-size: 12px;
+      }
+      &-link {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@include tablet {
+  .footer {
+    padding: 40px 0 10px;
+
+    &__top {
+      margin-bottom: 5px;
+    }
+
+    &__descriptions {
+      margin-bottom: 5px;
+    }
+
+    &__desc {
+      font-size: 28px;
+      &_love {
+        margin-left: -40px;
+      }
+    }
+
+    &__title {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+
+    &__organizer {
+      font-size: 18px;
+      &_link {
+        font-size: 22px;
+      }
+    }
+
+    &__bottom {
+      padding-top: 5px;
+      &-desc {
+        font-size: 10px;
+      }
+      &-link {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@include tablet {
+  .footer {
+    padding: 10px 0;
   }
 }

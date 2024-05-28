@@ -105,26 +105,14 @@ input {
   margin: 0 auto;
 }
 
-// @include laptop {
-//   .container {
-//     --containerOffset: 25px;
-//   }
-// }
+@include tablet {
+  .container {
+    --containerOffset: 80px;
+  }
+}
 
-// @include tablet {
-//   .container {
-//     --containerOffset: 30px;
-//   }
-// }
-
-// @include small-tablet {
-//   .container {
-//     --containerOffset: 10px;
-//   }
-// }
-
-// @include mobile {
-//   .container {
-//     --containerOffset: 5px;
-//   }
-// }
+@include mobile {
+  .container {
+    --containerOffset: 20px;
+  }
+}

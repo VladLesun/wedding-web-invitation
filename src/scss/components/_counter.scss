@@ -20,3 +20,45 @@
     font-family: var(--Nickainley-Normal);
   }
 }
+
+@include laptop-L {
+  .counter {
+    padding-top: 35%;
+    &__wrap {
+      padding: 30px;
+    }
+
+    &__waiting {
+      font-size: 40px;
+    }
+  }
+}
+
+@include laptop {
+  .counter {
+    padding-top: 30%;
+    &__wrap {
+      padding: 20px;
+    }
+
+    &__waiting {
+      font-size: 32px;
+    }
+  }
+}
+
+@include tablet {
+  .counter {
+    padding-top: 35%;
+
+    &__waiting {
+      font-size: 28px;
+    }
+  }
+}
+
+@include mobile {
+  .counter {
+    padding-top: 56.25%;
+  }
+}

@@ -22,8 +22,8 @@
     padding: 40px;
     border: 1px solid black;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.4);
-    color: black;
+    background-color: var(--place-wrap-bg);
+    color: var(--main-color);
   }
 
   &__detail {
@@ -63,6 +63,101 @@
       color: var(--active-map-color);
       border-color: var(--active-map-color);
       background-color: var(--active-map-bg);
+    }
+  }
+}
+
+@include laptop-L {
+  .place {
+    &__wrap {
+      max-width: 450px;
+      max-height: 350px;
+    }
+
+    &__detail {
+      font-size: 28px;
+    }
+
+    &__title {
+      font-size: 38px;
+    }
+
+    &__address {
+      font-size: 28px;
+    }
+
+    &__map {
+      padding: 15px 25px;
+      font-size: 28px;
+    }
+  }
+}
+
+@include laptop {
+  .place {
+    &__wrap {
+      max-width: 380px;
+      max-height: 260px;
+    }
+
+    &__detail {
+      font-size: 20px;
+    }
+
+    &__title {
+      font-size: 28px;
+    }
+
+    &__address {
+      font-size: 20px;
+    }
+
+    &__map {
+      padding: 15px 25px;
+      font-size: 20px;
+    }
+  }
+}
+
+@include tablet {
+  .place {
+    &__wrap {
+      max-width: 300px;
+      max-height: 200px;
+      padding: 20px;
+    }
+
+    &__detail {
+      font-size: 18px;
+    }
+
+    &__title {
+      font-size: 20px;
+    }
+
+    &__address {
+      font-size: 18px;
+    }
+
+    &__map {
+      padding: 10px 15px;
+      font-size: 18px;
+    }
+  }
+}
+
+@include mobile {
+  .place {
+    &__wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      max-width: inherit;
+      max-height: inherit;
+      padding: 10px;
+      border: none;
+      border-radius: 0;
     }
   }
 }

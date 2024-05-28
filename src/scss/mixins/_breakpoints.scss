@@ -1,3 +1,9 @@
+@mixin laptop-XL {
+  @media (max-width: 1440px) {
+    @content;
+  }
+}
+
 @mixin laptop-L {
   @media (max-width: 1200px) {
     @content;

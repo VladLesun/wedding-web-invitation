@@ -3,8 +3,6 @@
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
   margin-left: 150px;
-  &__item {
-  }
 
   &__unit {
     text-align: center;
@@ -19,6 +17,68 @@
       font-weight: 400;
       font-size: 36px;
       font-family: var(--Nickainley-Normal);
+    }
+  }
+}
+
+@include laptop-L {
+  .timer {
+    grid-gap: 25px;
+    margin-left: 80px;
+    &__unit {
+      &_num {
+        font-size: 36px;
+        margin-bottom: -10px;
+      }
+
+      &_desc {
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+@include laptop {
+  .timer {
+    grid-gap: 15px;
+    margin-left: 50px;
+    &__unit {
+      &_num {
+        font-size: 28px;
+        margin-bottom: -10px;
+      }
+
+      &_desc {
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+@include tablet {
+  .timer {
+    grid-gap: 10px;
+    &__unit {
+      &_num {
+        font-size: 22px;
+        margin-bottom: -5px;
+      }
+
+      &_desc {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@include mobile {
+  .timer {
+    margin-left: 20px;
+    margin-top: auto;
+    &__item {
+      padding: 5px;
+      background-color: var(--place-wrap-bg);
+      border-radius: 10px;
     }
   }
 }
