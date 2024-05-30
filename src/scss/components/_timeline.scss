@@ -2,9 +2,10 @@
   padding: 140px 0 35px;
   &__title {
     text-align: center;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 60px;
-    font-family: var(--Resphekt);
+    font-family: var(--title-font);
+    text-transform: uppercase;
     margin-bottom: 20px;
   }
 
@@ -47,6 +48,8 @@
     position: absolute;
     left: -5em;
     font-weight: 400;
+    font-family: var(--title-font);
+    text-transform: uppercase;
     font-size: 32px;
   }
 
@@ -64,6 +67,8 @@
 
   &__name {
     font-weight: 400;
+    font-family: var(--title-font);
+    text-transform: uppercase;
     font-size: 32px;
   }
 }
