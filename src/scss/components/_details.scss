@@ -1,113 +1,116 @@
 .details {
-  padding: 35px 0 140px;
+  padding: 25px 0 70px;
   &__title {
-    font-weight: 700;
-    font-size: 60px;
-    font-family: var(--Resphekt);
-    margin-bottom: 10px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: max-content;
+    font-weight: 400;
+    font-size: 50px;
+    font-family: var(--title-font);
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin-bottom: 60px;
+    &::after {
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      display: block;
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: var(--main-color);
+    }
   }
 
   &__desc {
-    font-weight: 400;
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-family: var(--desc-font);
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 40px;
   }
 
   &__list {
+    position: relative;
+    max-width: 940px;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 20px;
   }
 
   &__item {
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     background-color: transparent;
     border-radius: 50%;
-    &_one {
-      background-color: rgb(232, 219, 200);
+    &_first {
+      background-color: var(--first-circle);
+      // rgb(232, 219, 200)
     }
 
-    &_two {
-      background-color: rgb(200, 161, 147);
+    &_second {
+      background-color: var(--second-circle);
+      // rgb(200, 161, 147)
     }
 
-    &_three {
-      background-color: rgb(187, 187, 187);
+    &_third {
+      background-color: var(--third-circle);
+      // rgb(187, 187, 187)
     }
 
-    &_four {
-      background-color: rgb(161, 129, 106);
+    &_fourth {
+      background-color: var(--fourth-circle);
+      // rgb(161, 129, 106)
     }
 
-    &_five {
-      background-color: rgb(53, 69, 43);
+    &_fifth {
+      background-color: var(--fifth-circle);
+      // rgb(53, 69, 43)
     }
 
-    &_six {
-      background-color: rgb(0, 0, 0);
+    &_sixth {
+      background-color: var(--sixth-circle);
     }
   }
 }
 
 @include laptop-L {
   .details {
-    padding: 20px 0 70px;
     &__title {
       font-size: 40px;
-      margin-bottom: 10px;
+      margin-bottom: 40px;
     }
-
     &__desc {
-      text-align: center;
-      font-size: 22px;
+      font-size: 24px;
+    }
+    &__list {
+      max-width: 810px;
+      gap: 20px;
+    }
+    &__item {
+      width: 70px;
+      height: 70px;
     }
   }
 }
 
 @include laptop {
   .details {
-    padding: 15px 0 60px;
-    &__title {
-      font-size: 32px;
-      margin-bottom: 8px;
-    }
-
+    padding: 15px 0 50px;
     &__desc {
-      font-size: 18px;
-      margin-bottom: 10px;
+      font-size: 22px;
     }
-
     &__list {
+      max-width: 740px;
       gap: 10px;
     }
-
     &__item {
-      width: 30px;
-      height: 30px;
-    }
-  }
-}
-
-@include tablet {
-  .details {
-    padding: 10px 0 40px;
-    &__title {
-      font-size: 28px;
-      margin-bottom: 5px;
-    }
-
-    &__desc {
-      font-size: 20px;
-    }
-
-    &__list {
-      gap: 10px;
-    }
-
-    &__item {
-      width: 30px;
-      height: 30px;
+      width: 60px;
+      height: 60px;
     }
   }
 }
@@ -115,5 +118,44 @@
 @include tablet {
   .details {
     padding: 10px 0 20px;
+    &__title {
+      font-size: 32px;
+    }
+    &__desc {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    &__list {
+      max-width: 670px;
+      gap: 10px;
+    }
+    &__item {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+
+@include mobile {
+  .details {
+    &__title {
+      font-size: 18px;
+      margin-bottom: 10px;
+      &::after {
+        bottom: -5px;
+      }
+    }
+    &__desc {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    &__list {
+      max-width: 450px;
+      gap: 5px;
+    }
+    &__item {
+      width: 40px;
+      height: 40px;
+    }
   }
 }

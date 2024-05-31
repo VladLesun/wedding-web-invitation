@@ -38,13 +38,9 @@
       height: 1px;
       background-color: var(--main-color);
     }
-  }
-
-  &__desc {
-    text-align: center;
-    font-weight: 300;
-    font-size: 20px;
-    font-family: var(--desc-font);
+    &_time {
+      font-family: serif;
+    }
   }
 
   &__subitem {
@@ -69,9 +65,6 @@
     }
     &__title {
       font-size: 28px;
-    }
-    &__desc {
-      font-size: 18px;
     }
     &__subitem {
       &_text {
@@ -130,9 +123,6 @@
       letter-spacing: 5px;
       margin-bottom: 10px;
     }
-    &__desc {
-      font-size: 20px;
-    }
     &__subitem {
       &_text {
         font-size: 20px;
@@ -150,9 +140,6 @@
     }
     &__title {
       font-size: 18px;
-    }
-    &__desc {
-      font-size: 16px;
     }
     &__subitem {
       &_text {
