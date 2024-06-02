@@ -6,3 +6,39 @@
     url("../img/hero.jpg") type("image/jpg")
   );
 }
+
+@include laptop-L {
+  .hero {
+    background-image: image-set(
+      url("../img/hero_laptop-L.webp") type("image/webp"),
+      url("../img/hero_laptop-L.jpg") type("image/jpg")
+    );
+  }
+}
+
+@include laptop {
+  .hero {
+    background-image: image-set(
+      url("../img/hero_laptop.webp") type("image/webp"),
+      url("../img/hero_laptop.jpg") type("image/jpg")
+    );
+  }
+}
+
+@include tablet {
+  .hero {
+    background-image: image-set(
+      url("../img/hero_tablet.webp") type("image/webp"),
+      url("../img/hero_tablet.jpg") type("image/jpg")
+    );
+  }
+}
+
+@include mobile {
+  .hero {
+    background-image: image-set(
+      url("../img/hero_mobile.webp") type("image/webp"),
+      url("../img/hero_mobile.jpg") type("image/jpg")
+    );
+  }
+}

@@ -1,6 +1,5 @@
 .timer {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
   grid-gap: 20px;
   margin-left: 100px;
 

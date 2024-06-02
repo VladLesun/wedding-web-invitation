@@ -4,7 +4,7 @@
   background: center/cover no-repeat;
   background-image: image-set(
     url("../img/park-hall.webp") type("image/webp"),
-    url("../img/park-hall.jpeg") type("image/jpeg")
+    url("../img/park-hall.png") type("image/png")
   );
 
   &__wrap {
@@ -82,6 +82,10 @@
 
 @include laptop-L {
   .place {
+    background-image: image-set(
+      url("../img/park-hall_laptop-L.webp") type("image/webp"),
+      url("../img/park-hall_laptop-L.png") type("image/png")
+    );
     &__wrap {
       max-width: 500px;
       max-height: 400px;
@@ -104,6 +108,10 @@
 
 @include laptop {
   .place {
+    background-image: image-set(
+      url("../img/park-hall_laptop.webp") type("image/webp"),
+      url("../img/park-hall_laptop.png") type("image/png")
+    );
     &__wrap {
       max-width: 440px;
       max-height: 340px;
@@ -122,6 +130,10 @@
 
 @include tablet {
   .place {
+    background-image: image-set(
+      url("../img/park-hall_tablet.webp") type("image/webp"),
+      url("../img/park-hall_tablet.png") type("image/png")
+    );
     &__wrap {
       max-width: 400px;
       max-height: 300px;
@@ -144,6 +156,10 @@
 
 @include mobile {
   .place {
+    background-image: image-set(
+      url("../img/park-hall_mobile.webp") type("image/webp"),
+      url("../img/park-hall_mobile.png") type("image/png")
+    );
     &__wrap {
       justify-content: center;
       max-width: inherit;

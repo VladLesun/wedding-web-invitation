@@ -21,7 +21,7 @@
       <section class="invite">
         <h2 class="visually-hidden">Приглашение на свадьбу</h2>
         <ul class="invite__list">
-          <li class="invite__item invite__item_text">
+          <li id="invite1" class="invite__item invite__item_text">
             <h3 class="invite__title invite__title_time">01.09.2024</h3>
             <p class="invite__desc"></p>
             <ul class="invite__sublist">
@@ -45,31 +45,53 @@
               </li>
             </ul>
           </li>
-          <li class="invite__item">
+          <li id="invite2" class="invite__item">
             <picture>
               <source
+                media="(max-width: 580px)"
+                data-srcset="img/invite1_mobile.webp"
+                srcset="#"
+                type="image/webp"
+              />
+              <source
+                media="(max-width: 580px)"
+                data-srcset="img/invite1_mobile.png"
+                srcset="#"
+                type="image/png"
+              />
+              <source
                 media="(max-width: 760px)"
-                data-srcset="img/invite1.webp"
-                sizes=""
+                data-srcset="img/invite1_tablet.webp"
                 srcset="#"
                 type="image/webp"
               />
               <source
                 media="(max-width: 760px)"
-                data-srcset="img/invite1.png"
+                data-srcset="img/invite1_tablet.png"
                 srcset="#"
                 type="image/png"
               />
               <source
                 media="(max-width: 1000px)"
-                data-srcset="img/invite1-laptop.webp"
-                sizes=""
+                data-srcset="img/invite1_laptop.webp"
                 srcset="#"
                 type="image/webp"
               />
               <source
                 media="(max-width: 1000px)"
-                data-srcset="img/invite1-laptop.png"
+                data-srcset="img/invite1_laptop.png"
+                srcset="#"
+                type="image/png"
+              />
+              <source
+                media="(max-width: 1200px)"
+                data-srcset="img/invite1_laptop-L.webp"
+                srcset="#"
+                type="image/webp"
+              />
+              <source
+                media="(max-width: 1200px)"
+                data-srcset="img/invite1_laptop-L.png"
                 srcset="#"
                 type="image/png"
               />
@@ -86,30 +108,53 @@
               />
             </picture>
           </li>
-          <li class="invite__item">
+          <li id="invite3" class="invite__item">
             <picture>
               <source
+                media="(max-width: 580px)"
+                data-srcset="img/invite2_mobile.webp"
+                srcset="#"
+                type="image/webp"
+              />
+              <source
+                media="(max-width: 580px)"
+                data-srcset="img/invite2_mobile.png"
+                srcset="#"
+                type="image/png"
+              />
+              <source
                 media="(max-width: 760px)"
-                data-srcset="img/invite2.webp"
-                sizes=""
+                data-srcset="img/invite2_tablet.webp"
                 srcset="#"
                 type="image/webp"
               />
               <source
                 media="(max-width: 760px)"
-                data-srcset="img/invite2.png"
+                data-srcset="img/invite2_tablet.png"
                 srcset="#"
                 type="image/png"
               />
               <source
                 media="(max-width: 1000px)"
-                data-srcset="img/invite2-laptop.webp"
+                data-srcset="img/invite2_laptop-L.webp"
                 srcset="#"
                 type="image/webp"
               />
               <source
                 media="(max-width: 1000px)"
-                data-srcset="img/invite2-laptop.png"
+                data-srcset="img/invite2_laptop-L.png"
+                srcset="#"
+                type="image/png"
+              />
+              <source
+                media="(max-width: 1200px)"
+                data-srcset="img/invite2_laptop-L.webp"
+                srcset="#"
+                type="image/webp"
+              />
+              <source
+                media="(max-width: 1200px)"
+                data-srcset="img/invite2_laptop-L.png"
                 srcset="#"
                 type="image/png"
               />
@@ -126,7 +171,7 @@
               />
             </picture>
           </li>
-          <li class="invite__item invite__item_text">
+          <li id="invite4" class="invite__item invite__item_text">
             <h3 class="invite__title">Подарки</h3>
             <ul class="invite__sublist">
               <li class="invite__subitem">
@@ -257,6 +302,7 @@
             href="https://maps.app.goo.gl/j8h475h3unEHNGxw5"
             class="place__map"
             target="_blank"
+            aria-label="Место назначение, проложить маршрут"
           >
             Найти на карте
           </a>
@@ -290,20 +336,28 @@
           <p class="counter__waiting">Ждем вас через...</p>
           <ul class="counter__timer timer">
             <li class="timer__item">
-              <p class="timer__unit timer__unit_num">16</p>
-              <p class="timer__unit timer__unit_desc">дней</p>
+              <p class="timer__unit timer__unit_day timer__unit_num">0</p>
+              <p class="timer__unit timer__unit_day-desc timer__unit_desc">
+                дней
+              </p>
             </li>
             <li class="timer__item">
-              <p class="timer__unit timer__unit_num">16</p>
-              <p class="timer__unit timer__unit_desc">часов</p>
+              <p class="timer__unit timer__unit_hour timer__unit_num">0</p>
+              <p class="timer__unit timer__unit_hour-desc timer__unit_desc">
+                часов
+              </p>
             </li>
             <li class="timer__item">
-              <p class="timer__unit timer__unit_num">16</p>
-              <p class="timer__unit timer__unit_desc">минут</p>
+              <p class="timer__unit timer__unit_min timer__unit_num">0</p>
+              <p class="timer__unit timer__unit_min-desc timer__unit_desc">
+                минут
+              </p>
             </li>
             <li class="timer__item">
-              <p class="timer__unit timer__unit_num">16</p>
-              <p class="timer__unit timer__unit_desc">секунд</p>
+              <p class="timer__unit timer__unit_sec timer__unit_num">0</p>
+              <p class="timer__unit timer__unit_sec-desc timer__unit_desc">
+                секунд
+              </p>
             </li>
           </ul>
         </div>
@@ -323,8 +377,9 @@
                 <p class="footer__organizer">
                   Анна:
                   <a
-                    href="tel:+375297724833"
                     class="footer__organizer footer__organizer_link"
+                    href="tel:+375297724833"
+                    aria-label="Связь с организатором Анной"
                   >
                     +375 (29) 772-48-33
                   </a>
@@ -334,8 +389,9 @@
                 <p class="footer__organizer">
                   Алеся:
                   <a
-                    href="tel:+375296845120"
                     class="footer__organizer footer__organizer_link"
+                    href="tel:+375296845120"
+                    aria-label="Связь с организатором Алесей"
                   >
                     +375 (29) 684-51-20
                   </a>
@@ -345,9 +401,10 @@
                 <p class="footer__organizer">
                   Instagram:
                   <a
+                    class="footer__organizer footer__organizer_link"
                     href="https://www.instagram.com/wed.lova"
                     target="_blank"
-                    class="footer__organizer footer__organizer_link"
+                    aria-label="Instagram организаторов"
                   >
                     @wed.lova
                   </a>
@@ -355,7 +412,7 @@
               </li>
             </ul>
           </div>
-          <svg class="footer__img">
+          <svg class="footer__img lazyload">
             <use xlink:href="img/sprite.svg#logo" />
           </svg>
         </div>
@@ -363,9 +420,10 @@
           <p class="footer__bottom-desc">
             Copyright @2024 | Designer & Developer
             <a
+              class="footer__bottom-link"
               href="https://t.me/VladLesun"
               target="_blank"
-              class="footer__bottom-link"
+              aria-label="Написать разработчику сайта"
             >
               @vladlesun
             </a>
