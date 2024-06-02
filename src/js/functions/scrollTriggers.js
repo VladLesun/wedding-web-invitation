@@ -106,7 +106,6 @@ export const timelineScrollTrigger = () => {
         start: `${start} ${startScroll}`,
         end: `${end}`,
         scrub: 1,
-        markers: true,
       },
     });
   };
