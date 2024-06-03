@@ -6,15 +6,15 @@
   font-style: normal;
 }
 @font-face {
-  font-family: "Geometria-Light";
-  src: url("../fonts/Geometria-Light.woff2") format("woff2"), url("../Geometria-Light.woff");
+  font-family: "PlayfairDisplay";
+  src: url("../fonts/PlayfairDisplay.woff2") format("woff2"), url("../PlayfairDisplay.woff");
   font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
-  font-family: "PlayfairDisplay";
-  src: url("../fonts/PlayfairDisplay.woff2") format("woff2"), url("../PlayfairDisplay.woff");
+  font-family: "Geometria-Light";
+  src: url("../fonts/Geometria-Light.woff2") format("woff2"), url("../Geometria-Light.woff");
   font-weight: 400;
   font-display: swap;
   font-style: normal;
