@@ -571,24 +571,24 @@ export const friendsScrollTrigger = () => {
       "(min-width: 761px) and (max-width: 1024px)": () => {
         mediaTrigger(
           ".questionnaire__title",
-          ".place",
-          "top+=40%",
+          ".details",
           "top",
-          "bottom+=30%"
+          "top",
+          "bottom"
         );
         mediaTrigger(
           ".questionnaire__desc-strong",
-          ".place",
-          "top+=60%",
+          ".details",
           "top",
-          "bottom+=40%"
+          "top",
+          "bottom"
         );
         mediaTrigger(
           ".questionnaire__link",
-          ".place",
-          "top+=80%",
+          ".details",
           "top",
-          "bottom+=50%"
+          "top",
+          "bottom"
         );
       },
       "(min-width: 581px) and (max-width: 760px)": () => {
@@ -617,22 +617,22 @@ export const friendsScrollTrigger = () => {
       "(min-width: 320px) and (max-width: 580px)": () => {
         mediaTrigger(
           ".questionnaire__title",
-          ".details",
-          "top",
+          ".timeline",
+          "center",
           "top",
           "bottom"
         );
         mediaTrigger(
           ".questionnaire__desc-strong",
-          ".details",
-          "top",
+          ".timeline",
+          "center",
           "top",
           "bottom"
         );
         mediaTrigger(
           ".questionnaire__link",
-          ".details",
-          "top",
+          ".timeline",
+          "center",
           "top",
           "bottom"
         );
@@ -695,35 +695,35 @@ export const friendsScrollTrigger = () => {
       "(min-width: 761px) and (max-width: 1024px)": () => {
         mediaTrigger(
           "#timer-day",
-          ".questionnaire",
+          ".details",
           "-200",
-          "top+=10%",
+          "center",
           "top",
-          "bottom+=2%"
+          "bottom+=20%"
         );
         mediaTrigger(
           "#timer-hour",
-          ".questionnaire",
+          ".details",
           "-400",
-          "top+=10%",
+          "center",
           "top",
-          "bottom+=2%"
+          "bottom+=20%"
         );
         mediaTrigger(
           "#timer-min",
-          ".questionnaire",
+          ".details",
           "-600",
-          "top+=10%",
+          "center",
           "top",
-          "bottom+=2%"
+          "bottom+=20%"
         );
         mediaTrigger(
           "#timer-sec",
-          ".questionnaire",
+          ".details",
           "-800",
-          "top+=10%",
+          "center",
           "top",
-          "bottom+=2%"
+          "bottom+=20%"
         );
       },
       "(min-width: 581px) and (max-width: 760px)": () => {
@@ -760,45 +760,11 @@ export const friendsScrollTrigger = () => {
           "bottom+=20%"
         );
       },
-      "(min-width: 411px) and (max-width: 580px)": () => {
-        mediaTrigger(
-          "#timer-day",
-          ".details",
-          "-200",
-          "top",
-          "top",
-          "center+=12%"
-        );
-        mediaTrigger(
-          "#timer-hour",
-          ".details",
-          "-400",
-          "top",
-          "top",
-          "center+=12%"
-        );
-        mediaTrigger(
-          "#timer-min",
-          ".details",
-          "-600",
-          "top",
-          "top",
-          "center+=12%"
-        );
-        mediaTrigger(
-          "#timer-sec",
-          ".details",
-          "-800",
-          "top",
-          "top",
-          "center+=12%"
-        );
-      },
-      "(min-width: 320px) and (max-width: 410px)": () => {
-        mediaTrigger("#timer-day", ".details", "-200", "top", "top", "bottom");
-        mediaTrigger("#timer-hour", ".details", "-400", "top", "top", "bottom");
-        mediaTrigger("#timer-min", ".details", "-600", "top", "top", "bottom");
-        mediaTrigger("#timer-sec", ".details", "-800", "top", "top", "bottom");
+      "(min-width: 320px) and (max-width: 580px)": () => {
+        mediaTrigger("#timer-day", ".details", "-200", "top", "top", "center");
+        mediaTrigger("#timer-hour", ".details", "-400", "top", "top", "center");
+        mediaTrigger("#timer-min", ".details", "-600", "top", "top", "center");
+        mediaTrigger("#timer-sec", ".details", "-800", "top", "top", "center");
       },
     });
   };
