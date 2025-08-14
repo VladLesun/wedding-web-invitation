@@ -1,11 +1,27 @@
 :root {
   //! Шрифты
-  --Calibri: "Calibri-Regular", san-serif;
-  --HKGrotesk-Bold: "HKGrotesk-Bold", san-serif;
-  --HKGrotesk-Medium: "HKGrotesk-Medium", san-serif;
-  --TheSeasons-Bold: "TheSeasons-Bold", san-serif;
+  --title-font: "PlayfairDisplay", san-serif;
+  --desc-font: "Geometria-Light", san-serif;
+  --desc-bold-font: "Geometria-Bold", serif;
 
   //! Цвета
-  --main-color: #000;
-  --main-bg: #fff;
+  --main-color: rgb(0, 0, 0);
+  --main-bg: rgb(255, 255, 255);
+  --main-border: rgb(0, 0, 0);
+  --place-wrap-bg: rgba(255, 255, 255, 0.6);
+  --map-bg: rgba(255, 255, 255, 0.6);
+  --counter-color: rgb(255, 255, 255);
+  //! circles
+  --first-circle: rgb(0, 0, 0);
+  --second-circle: rgb(41 50 40);
+  --third-circle: rgb(83 96 78);
+  --fourth-circle: rgb(202 208 191);
+  --fifth-circle: rgb(224 209 198);
+  --sixth-circle: rgb(177 131 118);
+  //! hovers
+  --hover-map-color: rgb(0, 0, 0);
+  --active-map-color: rgb(229, 225, 230);
+  --active-map-bg: rgb(0, 0, 0);
+  --hover-link-color: rgb(212, 175, 55);
+  --active-link-color: rgb(212, 175, 55);
 }

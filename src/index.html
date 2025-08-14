@@ -2,38 +2,435 @@
 <html lang="ru">
   @include('partials/head.html')
   <body>
-    <section class="hero"></section>
-    <section class="timeline">
-      <div class="container">
-        <h2 class="timeline__title">План дня</h2>
-        <ul class="timeline__list">
-          <li class="timeline__item">
-            <img src="" alt="" class="timeline__svg" />
-            <p class="timeline__time">15:00</p>
-            <span class="timeline__dot"></span>
-            <p class="timeline__name">Сбор гостей</p>
+    <main class="main">
+      <section class="hero lazyload">
+        <h1 class="visually-hidden">Приглашение на свадьбу Анатолий и Дарья</h1>
+      </section>
+      <section class="friends">
+        <div class="container">
+          <h2 class="friends__title">
+            Дорогие родные <br />
+            и друзья&nbsp;!
+          </h2>
+          <p class="friends__desc">
+            С огромной радостью приглашаем вас разделить с нами один из самых
+            важных и счастливых моментов нашей жизни - день нашей свадьбы!
+          </p>
+        </div>
+      </section>
+      <section class="invite">
+        <h2 class="visually-hidden">Приглашение на свадьбу</h2>
+        <ul class="invite__list">
+          <li id="invite1" class="invite__item invite__item_text">
+            <h3 class="invite__title invite__title_time">01.09.2024</h3>
+            <p class="invite__desc"></p>
+            <ul class="invite__sublist">
+              <li class="invite__subitem">
+                <p class="invite__subitem invite__subitem_text">
+                  Пусть эта дата останется в вашей памяти навсегда, как и для
+                  нас этот радостный момент.
+                </p>
+              </li>
+              <li class="invite__subitem">
+                <p class="invite__subitem invite__subitem_text">
+                  Мы с нетерпением ждем, чтобы разделить с вами этот особенный
+                  день, полный любви, радости и счастливых моментов.
+                </p>
+              </li>
+              <li class="invite__subitem">
+                <p class="invite__subitem invite__subitem_text">
+                  Ваша поддержка и присутствие сделают наш день еще более
+                  незабываемым.
+                </p>
+              </li>
+            </ul>
           </li>
-          <li class="timeline__item">
-            <img src="" alt="" class="timeline__svg" />
-            <p class="timeline__time">16:00</p>
-            <span class="timeline__dot"></span>
-            <p class="timeline__name">Фуршет</p>
+          <li id="invite2" class="invite__item">
+            <picture>
+              <source
+                media="(max-width: 580px)"
+                data-srcset="img/invite1_mobile.webp"
+                srcset="#"
+                type="image/webp"
+              />
+              <source
+                media="(max-width: 580px)"
+                data-srcset="img/invite1_mobile.png"
+                srcset="#"
+                type="image/png"
+              />
+              <source
+                media="(max-width: 760px)"
+                data-srcset="img/invite1_tablet.webp"
+                srcset="#"
+                type="image/webp"
+              />
+              <source
+                media="(max-width: 760px)"
+                data-srcset="img/invite1_tablet.png"
+                srcset="#"
+                type="image/png"
+              />
+              <source
+                media="(max-width: 1000px)"
+                data-srcset="img/invite1_laptop.webp"
+                srcset="#"
+                type="image/webp"
+              />
+              <source
+                media="(max-width: 1000px)"
+                data-srcset="img/invite1_laptop.png"
+                srcset="#"
+                type="image/png"
+              />
+              <source
+                media="(max-width: 1200px)"
+                data-srcset="img/invite1_laptop-L.webp"
+                srcset="#"
+                type="image/webp"
+              />
+              <source
+                media="(max-width: 1200px)"
+                data-srcset="img/invite1_laptop-L.png"
+                srcset="#"
+                type="image/png"
+              />
+              <source
+                data-srcset="img/invite1.webp"
+                srcset="#"
+                type="image/webp"
+              />
+              <img
+                class="invite__img lazyload"
+                data-src="img/invite1.png"
+                src="#"
+                alt="Изображение Анатолия"
+              />
+            </picture>
           </li>
-          <li class="timeline__item">
-            <img src="" alt="" class="timeline__svg" />
-            <p class="timeline__time">17:00</p>
-            <span class="timeline__dot"></span>
-            <p class="timeline__name">Церемония</p>
+          <li id="invite3" class="invite__item">
+            <picture>
+              <source
+                media="(max-width: 580px)"
+                data-srcset="img/invite2_mobile.webp"
+                srcset="#"
+                type="image/webp"
+              />
+              <source
+                media="(max-width: 580px)"
+                data-srcset="img/invite2_mobile.png"
+                srcset="#"
+                type="image/png"
+              />
+              <source
+                media="(max-width: 760px)"
+                data-srcset="img/invite2_tablet.webp"
+                srcset="#"
+                type="image/webp"
+              />
+              <source
+                media="(max-width: 760px)"
+                data-srcset="img/invite2_tablet.png"
+                srcset="#"
+                type="image/png"
+              />
+              <source
+                media="(max-width: 1000px)"
+                data-srcset="img/invite2_laptop-L.webp"
+                srcset="#"
+                type="image/webp"
+              />
+              <source
+                media="(max-width: 1000px)"
+                data-srcset="img/invite2_laptop-L.png"
+                srcset="#"
+                type="image/png"
+              />
+              <source
+                media="(max-width: 1200px)"
+                data-srcset="img/invite2_laptop-L.webp"
+                srcset="#"
+                type="image/webp"
+              />
+              <source
+                media="(max-width: 1200px)"
+                data-srcset="img/invite2_laptop-L.png"
+                srcset="#"
+                type="image/png"
+              />
+              <source
+                data-srcset="img/invite2.webp"
+                srcset="#"
+                type="image/webp"
+              />
+              <img
+                class="invite__img lazyload"
+                data-src="img/invite2.png"
+                src="#"
+                alt="Изображение Дарьи"
+              />
+            </picture>
           </li>
-          <li class="timeline__item">
-            <img src="" alt="" class="timeline__svg" />
-            <p class="timeline__time">18:00</p>
-            <span class="timeline__dot"></span>
-            <p class="timeline__name">Праздничный банкет</p>
+          <li id="invite4" class="invite__item invite__item_text">
+            <h3 class="invite__title">Подарки</h3>
+            <ul class="invite__sublist">
+              <li class="invite__subitem">
+                <p class="invite__subitem invite__subitem_text">
+                  Просим вас не дарить нам цветы – мы не успеем насладиться их
+                  красотой до отъезда.
+                </p>
+              </li>
+              <li class="invite__subitem">
+                <p class="invite__subitem invite__subitem_text">
+                  Приятным комплиментом для нас вместо цветов будет бутылочка
+                  вашего любимого алкогольного напитка с пожеланиями, на какой
+                  повод нам стоит ее открыть.
+                </p>
+              </li>
+              <li class="invite__subitem">
+                <p class="invite__subitem invite__subitem_text">
+                  А самым главным подарком для нас будет ваше хорошее настроение
+                  на нашей свадьбе!
+                </p>
+              </li>
+            </ul>
           </li>
         </ul>
+      </section>
+      <section class="timeline">
+        <div class="container">
+          <h2 class="timeline__title">План дня</h2>
+          <ul class="timeline__list">
+            <li id="timeline1" class="timeline__item">
+              <picture>
+                <source
+                  data-srcset="img/transfer.webp"
+                  srcset="#"
+                  type="image/webp"
+                />
+                <img
+                  class="timeline__img lazyload"
+                  data-src="img/transfer.png"
+                  src="#"
+                  alt="Сбор гостей"
+                />
+              </picture>
+              <p class="timeline__time">15:30</p>
+              <span class="timeline__dot"></span>
+              <p class="timeline__name">Сбор гостей</p>
+            </li>
+            <li id="timeline2" class="timeline__item">
+              <picture>
+                <source
+                  data-srcset="img/welcome.webp"
+                  srcset="#"
+                  type="image/webp"
+                />
+                <img
+                  class="timeline__img lazyload"
+                  data-src="img/welcome.png"
+                  src="#"
+                  alt="Фуршет"
+                />
+              </picture>
+              <p class="timeline__time">16:00</p>
+              <span class="timeline__dot"></span>
+              <p class="timeline__name">Фуршет</p>
+            </li>
+            <li id="timeline3" class="timeline__item">
+              <picture>
+                <source
+                  data-srcset="img/ceremony.webp"
+                  srcset="#"
+                  type="image/webp"
+                />
+                <img
+                  class="timeline__img lazyload"
+                  data-src="img/ceremony.png"
+                  src="#"
+                  alt="Церемония"
+                />
+              </picture>
+              <p class="timeline__time">16:30</p>
+              <span class="timeline__dot"></span>
+              <p class="timeline__name">Церемония</p>
+            </li>
+            <li id="timeline4" class="timeline__item">
+              <picture>
+                <source
+                  data-srcset="img/dinner.webp"
+                  srcset="#"
+                  type="image/webp"
+                />
+                <img
+                  class="timeline__img lazyload"
+                  data-src="img/dinner.png"
+                  src="#"
+                  alt="Праздничный банкет"
+                />
+              </picture>
+              <p class="timeline__time">17:00</p>
+              <span class="timeline__dot"></span>
+              <p class="timeline__name">Праздничный банкет</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="details">
+        <h2 class="visually-hidden">Детали для вас на нашей свадьбе</h2>
+        <div class="container">
+          <h2 class="details__title">Дресс-код</h2>
+          <p class="details__desc">
+            Будем рады, если вы поддержите цветовую гамму нашего торжества
+          </p>
+          <ul class="details__list">
+            <li class="details__item details__item_first"></li>
+            <li class="details__item details__item_second"></li>
+            <li class="details__item details__item_third"></li>
+            <li class="details__item details__item_fourth"></li>
+            <li class="details__item details__item_fifth"></li>
+            <li class="details__item details__item_sixth"></li>
+          </ul>
+        </div>
+      </section>
+      <section class="place lazyload">
+        <div class="place__wrap">
+          <p class="place__detail">Место проведение мероприятия</p>
+          <h2 class="place__title">Park Hall</h2>
+          <p class="place__address">Минск, ул. Калиновского, 12</p>
+          <a
+            href="https://maps.app.goo.gl/j8h475h3unEHNGxw5"
+            class="place__map"
+            target="_blank"
+            aria-label="Место назначение, проложить маршрут"
+          >
+            Найти на карте
+          </a>
+        </div>
+      </section>
+      <section class="questionnaire">
+        <div class="container">
+          <h2 class="questionnaire__title">Подтверждение присутствия</h2>
+          <p class="questionnaire__desc">
+            Ваше присутствие и поддержка очень важны для нас. Дайте нам знать,
+            сможете ли вы быть с нами в этот особенный день до
+            <strong class="questionnaire__desc-strong">
+              15&nbsp;июля&nbsp;2024
+            </strong>
+          </p>
+          <p class="questionnaire__ask">
+            Ответьте на несколько вопросов, которые мы для Вас подготовили в
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSehPjZFFQlfVXLuKBme19efERIm9zvcZopJtazLE5vGjTAGHQ/viewform?usp=sharing"
+              target="_blank"
+              class="questionnaire__link"
+            >
+              ЭТОЙ&nbsp;ФОРМЕ
+            </a>
+          </p>
+        </div>
+      </section>
+      <section class="counter lazyload">
+        <h2 class="visually-hidden">Мы в ожидании вашего присутствия</h2>
+        <div class="counter__wrap">
+          <p class="counter__waiting">Ждем вас через...</p>
+          <ul class="counter__timer timer">
+            <li id='timer-day' class="timer__item">
+              <p class="timer__unit timer__unit_day timer__unit_num">0</p>
+              <p class="timer__unit timer__unit_day-desc timer__unit_desc">
+                дней
+              </p>
+            </li>
+            <li id='timer-hour' class="timer__item">
+              <p class="timer__unit timer__unit_hour timer__unit_num">0</p>
+              <p class="timer__unit timer__unit_hour-desc timer__unit_desc">
+                часов
+              </p>
+            </li>
+            <li id='timer-min' class="timer__item">
+              <p class="timer__unit timer__unit_min timer__unit_num">0</p>
+              <p class="timer__unit timer__unit_min-desc timer__unit_desc">
+                минут
+              </p>
+            </li>
+            <li id='timer-sec' class="timer__item">
+              <p class="timer__unit timer__unit_sec timer__unit_num">0</p>
+              <p class="timer__unit timer__unit_sec-desc timer__unit_desc">
+                секунд
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__top">
+          <div class="footer__descriptions">
+            <p class="footer__desc">С любовью</p>
+            <p class="footer__desc">Дарья и Анатолий</p>
+          </div>
+          <div class="footer__organizers">
+            <h2 class="footer__title">Организаторы</h2>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <p class="footer__organizer">
+                  Анна:
+                  <a
+                    class="footer__organizer footer__organizer_link"
+                    href="tel:+375297724833"
+                    aria-label="Связь с организатором Анной"
+                  >
+                    +375 (29) 772-48-33
+                  </a>
+                </p>
+              </li>
+              <li class="footer__item">
+                <p class="footer__organizer">
+                  Алеся:
+                  <a
+                    class="footer__organizer footer__organizer_link"
+                    href="tel:+375296845120"
+                    aria-label="Связь с организатором Алесей"
+                  >
+                    +375 (29) 684-51-20
+                  </a>
+                </p>
+              </li>
+              <li class="footer__item">
+                <p class="footer__organizer">
+                  Instagram:
+                  <a
+                    class="footer__organizer footer__organizer_link"
+                    href="https://www.instagram.com/wed.lova"
+                    target="_blank"
+                    aria-label="Instagram организаторов"
+                  >
+                    @wed.lova
+                  </a>
+                </p>
+              </li>
+            </ul>
+          </div>
+          <svg class="footer__img lazyload">
+            <use xlink:href="img/sprite.svg#logo" />
+          </svg>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__bottom-desc">
+            Copyright @2024 | Designer & Developer
+            <a
+              class="footer__bottom-link"
+              href="https://t.me/VladLesun"
+              target="_blank"
+              aria-label="Написать разработчику сайта"
+            >
+              @vladlesun
+            </a>
+            | All Rights Reserved
+          </p>
+        </div>
       </div>
-    </section>
-    <section class="invite"></section>
+    </footer>
   </body>
 </html>

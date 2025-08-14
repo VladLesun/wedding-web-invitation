@@ -1,0 +1,90 @@
+.timer {
+  display: flex;
+  grid-gap: 20px;
+  margin-left: 100px;
+
+  &__unit {
+    text-align: center;
+    color: var(--counter-color);
+    &_num {
+      font-family: var(--desc-font);
+      font-weight: 300;
+      font-size: 40px;
+      line-height: 1.5;
+      margin-bottom: -5px;
+    }
+    &_desc {
+      font-family: var(--desc-font);
+      font-weight: 300;
+      font-size: 30px;
+      line-height: 1.5;
+      text-transform: uppercase;
+      letter-spacing: 10px;
+    }
+  }
+}
+
+@include laptop-L {
+  .timer {
+    margin-left: 50px;
+    &__unit {
+      &_num {
+        font-size: 30px;
+      }
+      &_desc {
+        font-size: 26px;
+        letter-spacing: 7px;
+      }
+    }
+  }
+}
+
+@include laptop {
+  .timer {
+    grid-gap: 10px;
+    margin-left: 20px;
+    &__unit {
+      &_num {
+        font-size: 28px;
+      }
+
+      &_desc {
+        font-size: 24px;
+        letter-spacing: 5px;
+      }
+    }
+  }
+}
+
+@include tablet {
+  .timer {
+    margin-left: 50px;
+    &__unit {
+      &_num {
+        font-size: 22px;
+      }
+
+      &_desc {
+        font-size: 18px;
+        letter-spacing: 2px;
+      }
+    }
+  }
+}
+
+@include mobile {
+  .timer {
+    margin-left: 0;
+    grid-gap: 5px;
+    &__unit {
+      &_num {
+        font-size: 18px;
+      }
+
+      &_desc {
+        font-size: 16px;
+        letter-spacing: 2px;
+      }
+    }
+  }
+}
